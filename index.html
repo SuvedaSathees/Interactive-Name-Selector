@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Name Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin: 10px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #004080;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="r">Name</h1>
+    <button onclick="call()">Suve</button>
+    <button onclick="cal()">Sun</button>
+    <button onclick="ca()">Sri</button>
+    <button onclick="c()">Siva</button>
+    <script>
+        var rel = document.getElementById("r");
+        function call() {
+            rel.textContent = "Suveda";
+        }
+        function cal() {
+            rel.textContent = "Sunmathi";
+        }
+        function ca() {
+            rel.textContent = "Srimun";
+        }
+        function c() {
+            rel.textContent = "Sivaraj";
+        }
+    </script>
+</body>
+</html>
